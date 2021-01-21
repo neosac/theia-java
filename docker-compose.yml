@@ -1,0 +1,12 @@
+version: '2'
+services:
+  theia-java:
+    container_name: theia-java
+    image: ceastudillos/theia-java:latest
+    ports:
+      - "3000:3000/tcp"
+      - "3000:3000/udp"
+    volumes: #Todo volumen debe tener en el host chmod 677 para que pueda trabajar en Theia
+      - /storage/workspaces:/home/project:cached
+      - /storage/.m2:/home/theia/.m2
+    restart: 'no'
