@@ -21,6 +21,7 @@
         "@theia/filesystem": "next",
         "@theia/getting-started": "next",
         "@theia/git": "next",
+        "@theia/json": "latest",
         "@theia/keymaps": "next",
         "@theia/markers": "next",
         "@theia/messages": "next",
